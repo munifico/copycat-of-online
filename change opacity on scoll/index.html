@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Opacity On Scroll</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header-bg">
+            <h2>Change Opacity On Scroll</h2>
+        </div>
+        <section>
+                <h2>Change My Life of Front Developer.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin ullamcorper accumsan. Nam fringilla velit mauris, in molestie arcu lobortis id. Suspendisse potenti. Morbi scelerisque enim a mi finibus, vitae finibus odio blandit. Suspendisse consequat posuere sollicitudin. Proin at nisi aliquam, commodo eros sit amet, feugiat ipsum. Mauris id risus mollis, viverra elit at, varius elit. Nullam in convallis nibh. Etiam vitae molestie leo, eu dictum felis.
+                <br><br>
+                Proin porttitor lacus in massa mattis eleifend. Nulla vestibulum, neque eu tempus porta, lectus nibh accumsan dolor, vitae laoreet odio libero non dolor. Pellentesque pretium fermentum risus, quis porta nibh. Sed nulla risus, pretium et ipsum blandit, laoreet consequat turpis. Nullam laoreet quam eget dui tincidunt, vitae mattis lacus consectetur. Nullam sit amet tincidunt ante, vitae lobortis massa. Sed a dui ante. Suspendisse a tristique magna. Pellentesque id nisi ut augue tempor accumsan eu id quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at ipsum at justo pharetra scelerisque vel viverra odio. Proin scelerisque metus at sodales malesuada.
+                <br><br>
+                Proin feugiat, nisl non faucibus consectetur, erat lacus auctor lacus, in tristique mi ipsum nec ipsum. Mauris semper a massa a maximus. Cras augue justo, finibus eget ligula quis, suscipit aliquet turpis. Pellentesque molestie lorem eget commodo placerat. Suspendisse imperdiet facilisis tincidunt. Donec suscipit, lectus in vehicula tristique, orci ante cursus lacus, a lacinia mi tortor vitae arcu. Curabitur at malesuada neque. Cras blandit purus iaculis felis commodo consectetur. Integer et finibus lacus, id accumsan sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nisl nulla, finibus in nibh in, consectetur accumsan magna. Curabitur risus tellus, laoreet sed vehicula quis, bibendum ut tortor.
+                <br><br>
+                Aenean ornare faucibus ornare. Sed nulla risus, vulputate vehicula lobortis sed, venenatis eget mi. Vestibulum id cursus mi. Pellentesque at orci ex. Duis eget ligula eget dolor tincidunt pulvinar mattis ut magna. Nunc nec imperdiet nisl. In congue efficitur gravida. Etiam sit amet finibus leo. Sed mollis ultrices risus, quis aliquam ligula accumsan eget. Duis dignissim imperdiet est, eu tempus nisi ullamcorper sit amet. Suspendisse faucibus sollicitudin lobortis. Curabitur sit amet maximus diam. Donec mollis nibh erat, nec faucibus turpis cursus nec. Pellentesque tristique, sapien et ornare ultrices, ligula mi blandit urna, eu posuere justo ipsum in est.
+                <br><br>
+                Duis in laoreet nunc. Aenean non elit est. Curabitur arcu lacus, aliquet vitae nisi sed, laoreet mattis orci. Aliquam varius elit elit, ut cursus neque porta sit amet. Fusce auctor purus sed consectetur volutpat. Duis varius nisl et luctus lacinia. Morbi id velit malesuada, imperdiet risus sed, malesuada ante. Ut finibus lobortis orci porta bibendum. Aliquam erat volutpat. Sed luctus enim ac tortor molestie, ac lobortis urna commodo. Nam ac neque nec risus lobortis volutpat. Vestibulum tellus leo, fringilla et lobortis at, blandit non nisi. Aliquam in lorem mollis, vestibulum ligula vitae, dictum urna.</p>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+            $(function() {
+                $(window).scroll(function() {
+                    $('.header-bg').css('opacity', 1 - $(window).scrollTop()/700);
+                });
+            });
+        </script>
+    </body>
+</html>
